@@ -1,0 +1,85 @@
+{
+  "nodes": [
+    {
+      "id": "ordered",
+      "type": "file",
+      "file": "Действительные числа как упорядоченное поле.md",
+      "x": -450,
+      "y": 0,
+      "width": 300,
+      "height": 120
+    },
+    {
+      "id": "completeness",
+      "type": "file",
+      "file": "Полнота действительных чисел.md",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 130
+    },
+    {
+      "id": "sup",
+      "type": "file",
+      "file": "Точная верхняя грань (sup).md",
+      "x": 450,
+      "y": -220,
+      "width": 280,
+      "height": 110
+    },
+    {
+      "id": "inf",
+      "type": "file",
+      "file": "Точная нижняя грань (inf).md",
+      "x": 450,
+      "y": 220,
+      "width": 280,
+      "height": 110
+    },
+    {
+      "id": "consequences",
+      "type": "file",
+      "file": "Следствия полноты.md",
+      "x": 450,
+      "y": 0,
+      "width": 280,
+      "height": 110
+    },
+    {
+      "id": "sequences",
+      "type": "file",
+      "file": "Последовательности.md",
+      "x": 900,
+      "y": 0,
+      "width": 280,
+      "height": 110
+    },
+    {
+      "id": "nested",
+      "type": "file",
+      "file": "Вложенные отрезки.md",
+      "x": 900,
+      "y": 220,
+      "width": 280,
+      "height": 110
+    },
+    {
+      "id": "limit",
+      "type": "file",
+      "file": "Предел последовательности.md",
+      "x": 1350,
+      "y": -80,
+      "width": 280,
+      "height": 110
+    }
+  ],
+  "edges": [
+    {"id": "e1", "fromNode": "ordered", "fromSide": "right", "toNode": "completeness", "toSide": "left"},
+    {"id": "e2", "fromNode": "completeness", "fromSide": "right", "toNode": "sup", "toSide": "left"},
+    {"id": "e3", "fromNode": "completeness", "fromSide": "right", "toNode": "inf", "toSide": "left"},
+    {"id": "e4", "fromNode": "completeness", "fromSide": "right", "toNode": "consequences", "toSide": "left"},
+    {"id": "e5", "fromNode": "consequences", "fromSide": "right", "toNode": "sequences", "toSide": "left"},
+    {"id": "e6", "fromNode": "sequences", "fromSide": "bottom", "toNode": "nested", "toSide": "top"},
+    {"id": "e7", "fromNode": "sequences", "fromSide": "right", "toNode": "limit", "toSide": "left"}
+  ]
+}
