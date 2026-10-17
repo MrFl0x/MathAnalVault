@@ -1,0 +1,95 @@
+{
+  "nodes": [
+    {
+      "id": "completeness",
+      "type": "file",
+      "file": "Полнота действительных чисел.md",
+      "x": 0,
+      "y": 0,
+      "width": 300,
+      "height": 120
+    },
+    {
+      "id": "sup",
+      "type": "file",
+      "file": "Точная верхняя грань (sup).md",
+      "x": 400,
+      "y": -150,
+      "width": 280,
+      "height": 100
+    },
+    {
+      "id": "inf",
+      "type": "file",
+      "file": "Точная нижняя грань (inf).md",
+      "x": 400,
+      "y": 150,
+      "width": 280,
+      "height": 100
+    },
+    {
+      "id": "consequences",
+      "type": "file",
+      "file": "Следствия полноты.md",
+      "x": 800,
+      "y": 0,
+      "width": 280,
+      "height": 100
+    },
+    {
+      "id": "sequences",
+      "type": "file",
+      "file": "Последовательности.md",
+      "x": 1200,
+      "y": 0,
+      "width": 280,
+      "height": 100
+    },
+    {
+      "id": "nested",
+      "type": "file",
+      "file": "Вложенные отрезки.md",
+      "x": 1200,
+      "y": 200,
+      "width": 280,
+      "height": 100
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "completeness",
+      "fromSide": "right",
+      "toNode": "sup",
+      "toSide": "left"
+    },
+    {
+      "id": "e2",
+      "fromNode": "completeness",
+      "fromSide": "right",
+      "toNode": "inf",
+      "toSide": "left"
+    },
+    {
+      "id": "e3",
+      "fromNode": "completeness",
+      "fromSide": "right",
+      "toNode": "consequences",
+      "toSide": "left"
+    },
+    {
+      "id": "e4",
+      "fromNode": "consequences",
+      "fromSide": "right",
+      "toNode": "sequences",
+      "toSide": "left"
+    },
+    {
+      "id": "e5",
+      "fromNode": "sequences",
+      "fromSide": "bottom",
+      "toNode": "nested",
+      "toSide": "top"
+    }
+  ]
+}
